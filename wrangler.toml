@@ -1,7 +1,12 @@
 name = "phxwax-ing-v1"
 compatibility_date = "2026-06-30"
-workers_dev = false
-preview_urls = false
+workers_dev = true
+preview_urls = true
 
 [assets]
 directory = "./dist"
+
+# Bind to custom domain phxwax.ing
+[[routes]]
+pattern = "phxwax.ing"
+custom_domain = true
