@@ -1,0 +1,285 @@
+---
+import Layout from '../layouts/Layout.astro';
+import StructuredData from '../components/StructuredData.astro';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: 'phxwax.ing — Premium Domain',
+  description: 'A rare, high-value premium domain with SEO built directly into the name for professional waxing in Phoenix. Combines exact local keywords (PHX + wax) with a premium .ing TLD.',
+  url: 'https://phxwax.ing',
+  brand: {
+    '@type': 'Brand',
+    name: 'phxwax.ing',
+  },
+  offers: {
+    '@type': 'Offer',
+    price: '0',
+    priceCurrency: 'USD',
+    priceSpecification: {
+      '@type': 'PriceSpecification',
+      price: '0',
+      priceCurrency: 'USD',
+      valueAddedTaxIncluded: false,
+    },
+    availability: 'https://schema.org/InStock',
+    itemCondition: 'https://schema.org/NewCondition',
+    seller: {
+      '@type': 'Organization',
+      name: 'Desert Rich Domains',
+      url: 'https://desertrich.com',
+    },
+  },
+};
+---
+
+<Layout title="phxwax.ing &bull; Rare Premium Domain for Sale | Phoenix Waxing">
+  <StructuredData schema={schema} />
+
+  <!-- Hero Section -->
+  <header class="max-w-5xl mx-auto px-6 pt-20 pb-16 md:pt-24 md:pb-20 text-center">
+    <div class="inline-flex items-center gap-x-2 mb-6">
+      <div class="premium-badge flex items-center gap-x-2 px-4 py-1 rounded-2xl text-xs font-bold tracking-[1.5px]" style="background:linear-gradient(90deg,#2D2D2D,#1A1A1A);color:white;">
+        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <span>RARE &bull; HIGH-VALUE &bull; PHOENIX</span>
+      </div>
+    </div>
+
+    <h1 class="domain-name text-[4.75rem] md:text-[6rem] leading-none font-extrabold tracking-[-0.05em] text-[#2D2D2D] mb-4">phxwax<span class="text-[#B85C38]">.ing</span></h1>
+
+    <p class="max-w-2xl mx-auto text-2xl md:text-3xl font-semibold tracking-tight text-[#4A5D4A] mb-5">
+      The rare domain with SEO<br class="hidden md:block" />built directly into the name.
+    </p>
+
+    <p class="max-w-md mx-auto text-lg text-[#5C5C5C] mb-10">
+      Short. Memorable. Geo + service perfect. The strongest local positioning available for professional waxing in Phoenix.
+    </p>
+
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a href="#acquire"
+         class="group inline-flex items-center justify-center gap-x-3 px-9 py-4 bg-[#B85C38] hover:bg-[#A04E30] text-white font-semibold text-lg rounded-3xl transition-all active:scale-[0.985] shadow-lg shadow-[#B85C38]/20">
+        <span>Inquire to Acquire</span>
+        <svg class="w-5 h-5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+      </a>
+
+      <a href="#value"
+         class="inline-flex items-center justify-center px-8 py-4 border border-[#D4C9B8] hover:bg-white text-[#4A5D4A] font-semibold text-lg rounded-3xl transition-all">
+        View Acquisition Value
+      </a>
+    </div>
+
+    <div class="mt-8 text-sm text-[#6B6B6B]">
+      Extremely high acquisition price &bull; Serious buyers only
+    </div>
+  </header>
+
+  <!-- Why This Domain -->
+  <section id="why" class="max-w-6xl mx-auto px-6 pb-16">
+    <div class="text-center mb-10">
+      <div class="modern-pill inline-block mb-3">SEO + BRAND + LOCAL DOMINANCE</div>
+      <h2 class="section-title tracking-tight">Why phxwax.ing is exceptionally rare and valuable</h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="value-card clean-section rounded-3xl p-8" style="background:white;border:1px solid #EDE4D7;transition:transform 0.2s cubic-bezier(0.4,0,0.2,1),box-shadow 0.2s cubic-bezier(0.4,0,0.2,1);">
+        <div class="w-11 h-11 bg-[#F8F1E9] rounded-2xl flex items-center justify-center mb-6">
+          <svg class="w-5 h-5 text-[#B85C38]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        </div>
+        <h3 class="font-semibold text-xl tracking-tight mb-3">SEO Built Into the Domain</h3>
+        <p class="text-[#5C5C5C] leading-relaxed">Contains the exact high-intent local keywords: &ldquo;PHX&rdquo; + &ldquo;wax&rdquo;. Instantly relevant for searches like &ldquo;phx wax&rdquo;, &ldquo;wax phx&rdquo;, &ldquo;phoenix waxing&rdquo;, and &ldquo;body wax Phoenix&rdquo;.</p>
+      </div>
+
+      <div class="value-card clean-section rounded-3xl p-8" style="background:white;border:1px solid #EDE4D7;transition:transform 0.2s cubic-bezier(0.4,0,0.2,1),box-shadow 0.2s cubic-bezier(0.4,0,0.2,1);">
+        <div class="w-11 h-11 bg-[#F8F1E9] rounded-2xl flex items-center justify-center mb-6">
+          <svg class="w-5 h-5 text-[#B85C38]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        </div>
+        <h3 class="font-semibold text-xl tracking-tight mb-3">Perfect Local Positioning</h3>
+        <p class="text-[#5C5C5C] leading-relaxed">&ldquo;PHX&rdquo; is the universally recognized shorthand for Phoenix &mdash; one of America&rsquo;s fastest-growing major metros. This domain owns the local conversation for waxing services.</p>
+      </div>
+
+      <div class="value-card clean-section rounded-3xl p-8" style="background:white;border:1px solid #EDE4D7;transition:transform 0.2s cubic-bezier(0.4,0,0.2,1),box-shadow 0.2s cubic-bezier(0.4,0,0.2,1);">
+        <div class="w-11 h-11 bg-[#F8F1E9] rounded-2xl flex items-center justify-center mb-6">
+          <svg class="w-5 h-5 text-[#B85C38]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        </div>
+        <h3 class="font-semibold text-xl tracking-tight mb-3">Modern .ing TLD Advantage</h3>
+        <p class="text-[#5C5C5C] leading-relaxed">The dynamic .ing extension feels contemporary and action-oriented (&ldquo;waxing&rdquo;). It stands out, is highly brandable, and signals a modern, forward-thinking business.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Acquisition Value -->
+  <section id="value" class="bg-white border-y border-[#EDE4D7]">
+    <div class="max-w-5xl mx-auto px-6 py-16 md:py-20">
+      <div class="grid md:grid-cols-12 gap-x-12 items-center">
+        <div class="md:col-span-7">
+          <div class="modern-pill mb-4 inline-block">EXTREMELY HIGH ACQUISITION VALUE</div>
+          <h2 class="section-title tracking-tight mb-6">A premium, scarce digital asset in one of America&rsquo;s strongest growth markets</h2>
+
+          <div class="prose prose-lg text-[#4A5D4A]">
+            <p class="mb-4">phxwax.ing combines three powerful elements rarely found together in a single domain:</p>
+            <ul class="space-y-2 text-[15px]">
+              <li class="flex items-start gap-x-2"><span class="text-[#B85C38] mt-1">&bull;</span> <span>Exact local + service keywords (PHX + wax)</span></li>
+              <li class="flex items-start gap-x-2"><span class="text-[#B85C38] mt-1">&bull;</span> <span>Premium modern TLD (.ing)</span></li>
+              <li class="flex items-start gap-x-2"><span class="text-[#B85C38] mt-1">&bull;</span> <span>Short, memorable, and ownable brand name</span></li>
+            </ul>
+            <p class="mt-4">In the competitive Phoenix beauty market, this level of precise, high-intent positioning is exceptionally rare. Domains of this caliber in strong growth metros with built-in SEO command extremely high acquisition prices.</p>
+          </div>
+        </div>
+
+        <div class="md:col-span-5 mt-10 md:mt-0">
+          <div class="clean-section rounded-3xl p-8" style="background:white;border:1px solid #EDE4D7;">
+            <div class="space-y-6">
+              <div>
+                <div class="text-sm font-medium text-[#6B6B6B] mb-1">Market Strength</div>
+                <div class="text-3xl font-semibold tracking-tight">Phoenix Metro</div>
+                <div class="text-sm text-[#B85C38]">One of the fastest-growing major U.S. metros</div>
+              </div>
+
+              <div class="pt-5 border-t border-[#EDE4D7]">
+                <div class="text-sm font-medium text-[#6B6B6B] mb-2">Why This Domain Commands Premium Pricing</div>
+                <div class="grid grid-cols-2 gap-y-2 text-sm">
+                  <div class="flex items-center gap-x-2">
+                    <svg class="w-3 h-3 text-[#B85C38]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                    <span>Exact local intent</span>
+                  </div>
+                  <div class="flex items-center gap-x-2">
+                    <svg class="w-3 h-3 text-[#B85C38]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                    <span>Strong brandability</span>
+                  </div>
+                  <div class="flex items-center gap-x-2">
+                    <svg class="w-3 h-3 text-[#B85C38]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                    <span>Modern TLD</span>
+                  </div>
+                  <div class="flex items-center gap-x-2">
+                    <svg class="w-3 h-3 text-[#B85C38]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                    <span>Scarce in market</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases -->
+  <section id="use-cases" class="max-w-6xl mx-auto px-6 py-16">
+    <div class="text-center mb-10">
+      <div class="modern-pill inline-block mb-3">HIGHLY VERSATILE</div>
+      <h2 class="section-title tracking-tight">Ideal foundation for Phoenix market leadership</h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="clean-section rounded-3xl p-8" style="background:white;border:1px solid #EDE4D7;">
+        <div class="flex items-center gap-x-4 mb-4">
+          <svg class="w-5 h-5 text-[#B85C38]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z"/></svg>
+          <h4 class="font-semibold">Flagship Waxing Salon</h4>
+        </div>
+        <p class="text-[#5C5C5C] text-sm">Instant local authority and memorable brand for a premium waxing studio or multi-location group in the Valley.</p>
+      </div>
+
+      <div class="clean-section rounded-3xl p-8" style="background:white;border:1px solid #EDE4D7;">
+        <div class="flex items-center gap-x-4 mb-4">
+          <svg class="w-5 h-5 text-[#B85C38]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+          <h4 class="font-semibold">Mobile / Concierge Service</h4>
+        </div>
+        <p class="text-[#5C5C5C] text-sm">Perfect short, professional name for an on-demand waxing service that serves the greater Phoenix area.</p>
+      </div>
+
+      <div class="clean-section rounded-3xl p-8" style="background:white;border:1px solid #EDE4D7;">
+        <div class="flex items-center gap-x-4 mb-4">
+          <svg class="w-5 h-5 text-[#B85C38]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          <h4 class="font-semibold">Booking Platform or Directory</h4>
+        </div>
+        <p class="text-[#5C5C5C] text-sm">Strong foundation for a local platform connecting clients with trusted Phoenix waxing professionals.</p>
+      </div>
+
+      <div class="clean-section rounded-3xl p-8" style="background:white;border:1px solid #EDE4D7;">
+        <div class="flex items-center gap-x-4 mb-4">
+          <svg class="w-5 h-5 text-[#B85C38]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+          <h4 class="font-semibold">Training Academy</h4>
+        </div>
+        <p class="text-[#5C5C5C] text-sm">Clear, ownable name for a Phoenix-based waxing education or certification program.</p>
+      </div>
+
+      <div class="clean-section rounded-3xl p-8" style="background:white;border:1px solid #EDE4D7;">
+        <div class="flex items-center gap-x-4 mb-4">
+          <svg class="w-5 h-5 text-[#B85C38]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+          <h4 class="font-semibold">Product Line or Aftercare</h4>
+        </div>
+        <p class="text-[#5C5C5C] text-sm">Memorable brand for premium waxing products, tools, or aftercare targeted at the Phoenix market.</p>
+      </div>
+
+      <div class="clean-section rounded-3xl p-8" style="background:white;border:1px solid #EDE4D7;">
+        <div class="flex items-center gap-x-4 mb-4">
+          <svg class="w-5 h-5 text-[#B85C38]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <h4 class="font-semibold">National Expansion Base</h4>
+        </div>
+        <p class="text-[#5C5C5C] text-sm">Use the strong Phoenix flagship identity as the foundation for regional or national growth.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section id="acquire" class="bg-[#2D2D2D] text-white">
+    <div class="max-w-4xl mx-auto px-6 py-20 text-center">
+      <div class="max-w-xl mx-auto">
+        <div class="inline-block px-4 py-1 bg-white/10 rounded-full text-xs font-medium tracking-wider mb-6">EXTREMELY HIGH ACQUISITION PRICE</div>
+
+        <h2 class="text-5xl md:text-[3.1rem] font-semibold tracking-tighter leading-none mb-6">Own the strongest local<br />positioning in Phoenix waxing.</h2>
+
+        <p class="text-xl text-white/70 mb-10">phxwax.ing is a rare, high-value premium domain with SEO built directly into the name. It represents an exceptionally strong strategic acquisition for serious buyers seeking immediate local market dominance in one of America&rsquo;s fastest-growing cities.</p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="mailto:sales@desertrich.com?subject=Acquisition%20Inquiry%20-%20phxwax.ing&body=Hello,%0D%0A%0D%0AI%20am%20interested%20in%20acquiring%20phxwax.ing.%20Please%20provide%20details%20and%20next%20steps.%0D%0A%0D%0ABest%20regards,"
+            class="inline-flex items-center justify-center gap-x-3 px-10 py-4 bg-white text-[#2D2D2D] hover:bg-[#F8F1E9] font-semibold text-lg rounded-3xl transition-all active:scale-[0.985]"
+          >
+            <span>Make an Offer</span>
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </a>
+
+          <button onclick="copyEmail()"
+                  class="inline-flex items-center justify-center gap-x-3 px-8 py-4 border border-white/30 hover:bg-white/5 font-medium text-lg rounded-3xl transition-all">
+            <span>Copy Contact Email</span>
+          </button>
+        </div>
+
+        <p class="mt-8 text-sm text-white/50">Serious inquiries only. This is a high-acquisition-value asset.</p>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<script>
+  function copyEmail() {
+    const email = 'sales@desertrich.com';
+    navigator.clipboard.writeText(email).then(() => {
+      const btns = document.querySelectorAll('button');
+      btns.forEach(btn => {
+        if (btn.innerText.includes('Copy Contact')) {
+          const original = btn.innerHTML;
+          btn.innerHTML = '<span>Copied!</span>';
+          setTimeout(() => { btn.innerHTML = original; }, 2000);
+        }
+      });
+    }).catch(() => {
+      window.location.href = 'mailto:' + email;
+    });
+  }
+
+  // Hover effects for value cards
+  document.querySelectorAll('.clean-section').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      card.style.transform = 'translateY(-3px)';
+      card.style.boxShadow = '0 20px 25px -5px rgb(0 0 0 / 0.08), 0 8px 10px -6px rgb(0 0 0 / 0.08)';
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = '';
+      card.style.boxShadow = '';
+    });
+  });
+
+  console.log('%c[phxwax.ing] Premium domain landing ready.', 'color:#B85C38');
+</script>
