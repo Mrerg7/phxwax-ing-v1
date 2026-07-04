@@ -1,0 +1,5 @@
+# Canonical URL enforcement — single indexed homepage at https://phxwax.ing/
+/index.html  /  301
+/sitemap.xml  /sitemap-index.xml  301
+/search  /  301
+https://www.phxwax.ing/*  https://phxwax.ing/:splat  301
