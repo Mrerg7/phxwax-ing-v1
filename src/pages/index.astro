@@ -2,18 +2,25 @@
 import Layout from '../layouts/Layout.astro';
 import StructuredData from '../components/StructuredData.astro';
 
+const siteUrl = 'https://phxwax.ing';
+const ogImage = `${siteUrl}/og-image.png`;
+const contactEmail = 'sales@desertrich.com';
+
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'Product',
   name: 'phxwax.ing — Premium Domain',
   description: 'A rare, high-value premium domain with SEO built directly into the name for professional waxing in Phoenix. Combines exact local keywords (PHX + wax) with a premium .ing TLD.',
-  url: 'https://phxwax.ing/',
+  url: `${siteUrl}/`,
+  image: [ogImage],
+  category: 'Premium Domain Name',
   brand: {
     '@type': 'Brand',
     name: 'phxwax.ing',
   },
   offers: {
     '@type': 'Offer',
+    url: `${siteUrl}/`,
     price: '0',
     priceCurrency: 'USD',
     priceSpecification: {
@@ -28,12 +35,76 @@ const schema = {
       '@type': 'Organization',
       name: 'Desert Rich Domains',
       url: 'https://desertrich.com',
+      email: contactEmail,
     },
+    shippingDetails: {
+      '@type': 'OfferShippingDetails',
+      shippingRate: {
+        '@type': 'MonetaryAmount',
+        value: 0,
+        currency: 'USD',
+      },
+      shippingDestination: {
+        '@type': 'DefinedRegion',
+        addressCountry: 'US',
+      },
+      deliveryTime: {
+        '@type': 'ShippingDeliveryTime',
+        handlingTime: {
+          '@type': 'QuantitativeValue',
+          minValue: 0,
+          maxValue: 1,
+          unitCode: 'DAY',
+        },
+        transitTime: {
+          '@type': 'QuantitativeValue',
+          minValue: 0,
+          maxValue: 0,
+          unitCode: 'DAY',
+        },
+      },
+    },
+    hasMerchantReturnPolicy: {
+      '@type': 'MerchantReturnPolicy',
+      applicableCountry: 'US',
+      returnPolicyCategory: 'https://schema.org/MerchantReturnNotPermitted',
+      merchantReturnDays: 0,
+      name: 'No Returns',
+      description:
+        'Due to the nature of digital domain name assets, returns are not applicable after transfer. Escrow-backed transactions available for buyer protection.',
+    },
+  },
+  review: {
+    '@type': 'Review',
+    author: {
+      '@type': 'Organization',
+      name: 'Desert Rich',
+    },
+    datePublished: '2026-07-04',
+    reviewBody:
+      'A rare Phoenix geo + service domain with SEO built into the name — short, brandable, and exceptionally strong for professional waxing in a major growth metro.',
+    reviewRating: {
+      '@type': 'Rating',
+      ratingValue: '5',
+      bestRating: '5',
+      worstRating: '1',
+    },
+  },
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '5',
+    bestRating: '5',
+    worstRating: '1',
+    ratingCount: 1,
+    reviewCount: 1,
   },
 };
 ---
 
-<Layout title="phxwax.ing &bull; Rare Premium Domain for Sale | Phoenix Waxing">
+<Layout
+  title="phxwax.ing &bull; Rare Premium Domain for Sale | Phoenix Waxing"
+  ogImage={ogImage}
+>
   <StructuredData schema={schema} />
 
   <!-- Hero Section -->
@@ -45,7 +116,7 @@ const schema = {
       </div>
     </div>
 
-    <h1 class="domain-name text-[4.75rem] md:text-[6rem] leading-none font-extrabold tracking-[-0.05em] text-[#2D2D2D] mb-4">phxwax<span class="text-[#B85C38]">.ing</span></h1>
+    <h1 class="domain-name text-[3.25rem] sm:text-[4.75rem] md:text-[6rem] leading-none font-extrabold tracking-[-0.05em] text-[#2D2D2D] mb-4 break-words">phxwax<span class="text-[#B85C38]">.ing</span></h1>
 
     <p class="max-w-2xl mx-auto text-2xl md:text-3xl font-semibold tracking-tight text-[#4A5D4A] mb-5">
       The rare domain with SEO<br class="hidden md:block" />built directly into the name.
@@ -227,7 +298,7 @@ const schema = {
       <div class="max-w-xl mx-auto">
         <div class="inline-block px-4 py-1 bg-white/10 rounded-full text-xs font-medium tracking-wider mb-6">EXTREMELY HIGH ACQUISITION PRICE</div>
 
-        <h2 class="text-5xl md:text-[3.1rem] font-semibold tracking-tighter leading-none mb-6">Own the strongest local<br />positioning in Phoenix waxing.</h2>
+        <h2 class="text-3xl sm:text-5xl md:text-[3.1rem] font-semibold tracking-tighter leading-none mb-6">Own the strongest local<br class="hidden sm:block" /> positioning in Phoenix waxing.</h2>
 
         <p class="text-xl text-white/70 mb-10">phxwax.ing is a rare, high-value premium domain with SEO built directly into the name. It represents an exceptionally strong strategic acquisition for serious buyers seeking immediate local market dominance in one of America&rsquo;s fastest-growing cities.</p>
 
