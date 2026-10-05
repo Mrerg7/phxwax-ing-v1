@@ -12,7 +12,17 @@ const schema = {
   name: 'phxwax.ing — Premium Domain',
   description: 'A rare, high-value premium domain with SEO built directly into the name for professional waxing in Phoenix. Combines exact local keywords (PHX + wax) with a premium .ing TLD.',
   url: `${siteUrl}/`,
-  image: [ogImage],
+  image: [
+    {
+      '@type': 'ImageObject',
+      contentUrl: ogImage,
+      url: ogImage,
+      width: 1200,
+      height: 630,
+      caption: 'phxwax.ing — Premium Domain for Professional Waxing in Phoenix',
+      representativeOfPage: true,
+    },
+  ],
   category: 'Premium Domain Name',
   brand: {
     '@type': 'Brand',
